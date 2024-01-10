@@ -33,15 +33,40 @@
         <p> git init -> Se ejecuta sólo una vez al empezar el proyecto o empezar el seguimiento del proyecto. <br/></P>
         <p> git add -> añade un archivo al área de ensayo (internamente y se muestra con una A verde). </p>
         <p> Ejemplo : git add index.html <br/> </p>
+        <p> Ejemplo : git add .  (agrega todo) <br/> </p>
         <p> git commit -> lleva el archivo del área de ensayo al repositorio local y se le puede asignar nombre para saber
             qué se ha hecho. </p>
         <p> Ejemplo : git commit -s "descripción" </p>
+        <p> Es posible usar los dos comandos add y commit a la vez de la siguiente forma: </p>
+        <p> Ejemplo : git commit -am "descripción" </p>
         <p> git status -s -> dice los archivos que hay en el área de ensayo de nuestro proyecto. </p>
         <p> git log --oneline -> permite ver las copias de respaldo que se han hecho con sus comentarios.</p>
-        <p> git reset --hard [codigo instantáneo] -> Permite volver a la versión anterior, pero piero la versión que haya deshecho.</p>
-
-    <p> Cuando hago cambios en un fichero que ya estaban en el repositorio local vuelve a aparecer con git status -s. Esta 
+        <p> git reset --hard [codigo instantáneo] -> Permite volver a la versión anterior, pero pierdo la versión que haya deshecho.</p>
+        
+        
+        <p> La descripción realizada se puede modificar con:</p>
+        <p> git commit --amend</p>   
+        <p> Luego en la consola nueva que aparece escribo : </p>
+        <p> :i (borro lo que hay, escribo lo nuevo e intro) </p>
+        <p> :wq (para salir guardando del editor y así habré modificado el nombre) </p>
+        
+    
+    
+        <p> Cuando hago cambios en un fichero que ya estaban en el repositorio local vuelve a aparecer con git status -s. Esta 
         vez aparece con M roja y tenemos que añadir al área de ensayo y posteriormente al repositorio local. 
-    </p>    
+    </p>
+    
+    
+    <h1> Subiendo a GitHub </h1>
+
+    <P> En primer lugar hay que entrar a GitHub con nuestras credenciales.</P>
+    <p> Una vez dentro crearemos un repositorio con Create Repository, damos nombre y descripción, 
+        indicando si es público o privado.</p>
+    <p> Una vez creado es importante guardar la url tipo https://github.com/JoseUmbria/Cursos.git</p>
+    <p> En la consola escribiremos: </p>
+    <p> git remote add origin https://github.com/JoseUmbria/Cursos.git</p>
+    <p> git branch -M main </p>
+    <p> git push -u origin main </p>
+    <p> Con esto pide las credenciales de github la primera vez y si son correctas subirá la carpeta.</p>    
 </body>
 </html>
