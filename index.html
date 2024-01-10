@@ -24,9 +24,24 @@
             y se puede ver si el fichero tiene seguimiento de cambios por GIT, la segunda es la copia local del archivo.
     </p>   
 
+    <p> Para trabajar con GIT Bash puedo directamente hacerlo en la carpeta donde se guarda la copia de respaldo y así 
+        directamente está en el directorio correspondiente.
+    </p>
+
     <h2> Funciones importantes de GIT </h2>
 
-        <p> git init -> Se ejecuta sólo una vez al empezar el proyecto o empezar el seguimiento del proyecto. </P>
-        
+        <p> git init -> Se ejecuta sólo una vez al empezar el proyecto o empezar el seguimiento del proyecto. <br/></P>
+        <p> git add -> añade un archivo al área de ensayo (internamente y se muestra con una A verde). </p>
+        <p> Ejemplo : git add index.html <br/> </p>
+        <p> git commit -> lleva el archivo del área de ensayo al repositorio local y se le puede asignar nombre para saber
+            qué se ha hecho. </p>
+        <p> Ejemplo : git commit -s "descripción" </p>
+        <p> git status -s -> dice los archivos que hay en el área de ensayo de nuestro proyecto. </p>
+        <p> git log --oneline -> permite ver las copias de respaldo que se han hecho con sus comentarios.</p>
+        <p> git reset --hard [codigo instantáneo] -> Permite volver a la versión anterior, pero piero la versión que haya deshecho.</p>
+
+    <p> Cuando hago cambios en un fichero que ya estaban en el repositorio local vuelve a aparecer con git status -s. Esta 
+        vez aparece con M roja y tenemos que añadir al área de ensayo y posteriormente al repositorio local. 
+    </p>    
 </body>
 </html>
